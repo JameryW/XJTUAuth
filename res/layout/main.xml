@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:rowCount="1" android:columnCount="1" android:useDefaultMargins="false"
+        android:layout_gravity="center" android:orientation="vertical" android:gravity="center_horizontal"
+        android:padding="10dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交大网络认证"
+            android:textSize="28dp"/>
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="1" android:columnCount="2" android:layout_gravity="center">
+    <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:layout_row="0"
+            android:layout_column="0" android:gravity="center"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUser"
+            android:layout_row="0"
+            android:layout_column="1" android:width="240dp" android:inputType="text"/>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:rowCount="1" android:columnCount="2" android:useDefaultMargins="false" android:layout_gravity="center">
+    <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="密   码"
+            android:layout_row="0"
+            android:layout_column="0" android:gravity="center"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPsw"
+            android:password="true"
+            android:layout_row="0"
+            android:layout_column="1" android:width="240dp" android:inputType="textPassword"/>
+    </GridLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="1" android:columnCount="4" android:useDefaultMargins="false"
+            android:layout_gravity="center">
+        <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="记住密码"
+                android:gravity="center"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" android:clickable="true" android:enabled="true"
+                android:id="@+id/cbRemember" android:layout_gravity="center" android:gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="自动认证"
+                android:gravity="center"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true" android:enabled="true" android:checked="false"
+                android:id="@+id/cbAuto"  android:gravity="center_horizontal"/>
+        
+        <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:text="开机启动"
+                android:gravity="center"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true" android:enabled="true" android:checked="false"
+                android:id="@+id/cbStart"  android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:text="认证"
+            android:id="@+id/btnLogin"
+            android:textSize="18dp"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:text="注销"
+            android:id="@+id/btnLogout"
+            android:textSize="18dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tvNotice"
+            android:textSize="18dp" style="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+</LinearLayout>
